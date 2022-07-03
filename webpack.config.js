@@ -42,7 +42,7 @@ const baseConfig = {
         new CopyPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, './src/assets/images/rs_school_js.svg'),
+                    from: path.resolve(__dirname, './src/assets/images'),
                     to: path.resolve(__dirname, './dist/assets/images/'),
                 },
             ],

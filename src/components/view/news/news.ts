@@ -11,7 +11,7 @@ class News {
             const newsClone = newsItemTemp?.content.cloneNode(true) as HTMLDivElement;
             if (idx % 2) newsClone?.querySelector('.news__item')?.classList.add('alt');
             const newsMetaPhoto = newsClone?.querySelector('.news__meta-photo') as HTMLDivElement;
-            newsMetaPhoto.style.backgroundImage = `url(${item.urlToImage || 'img/news_placeholder.jpg'})`;
+            newsMetaPhoto.style.backgroundImage = `url(${item.urlToImage || '../../../assets/images/placeholder-image.png'})`;
             const newsMetaAuthor = newsClone?.querySelector('.news__meta-author');
             if (newsMetaAuthor) newsMetaAuthor.textContent = item.author || item.source.name;
             const newsMetaDate = newsClone?.querySelector('.news__meta-date');
