@@ -1,11 +1,26 @@
+.sources::-webkit-scrollbar {
+    width: 12px;
+}
+
+.sources::-webkit-scrollbar-track {
+    background: #17181c;
+}
+
+.sources::-webkit-scrollbar-thumb {
+    background-color: #30c5ff;
+    border-radius: 20px;
+}
+
 .sources {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
-    height: 120px;
+    height: 270px;
     overflow: auto;
     align-items: center;
     font: 300 1em 'Fira Sans', sans-serif;
+    margin-bottom: 50px;
+    scroll-behavior: smooth;
 }
 
 .source__item {
