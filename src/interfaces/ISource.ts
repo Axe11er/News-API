@@ -1,4 +1,4 @@
-export default interface Source {
+export default interface ISource {
     category: string;
     country: string;
     description: string;

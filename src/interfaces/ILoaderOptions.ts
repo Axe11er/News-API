@@ -1,3 +1,3 @@
-export default interface LoaderOptions {
+export default interface ILoaderOptions {
     apiKey: string;
 }
