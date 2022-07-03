@@ -1,7 +1,12 @@
 body {
+    margin: 0;
+    padding: 0;
     color: #fff;
     background: #17181c;
     font-family: sans-serif;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
 }
 
 header {
@@ -13,16 +18,24 @@ header h1 {
     font-weight: 800;
 }
 
+main {
+    margin-bottom: 100px;
+}
+
 footer {
-    height: 100px;
+    margin-top: auto;
+    min-height: 100px;
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
+    padding: 15px;
 }
 footer .copyright {
     font-size: 14px;
     color: #333;
     text-align: center;
+    padding: 15px;
 }
 footer .copyright a {
     color: #444;
@@ -32,4 +45,18 @@ footer .copyright a:hover {
 }
 footer .copyright:before {
     content: '©';
+}
+footer .info {
+    font-size: 18px;
+    color: black;
+    list-style: none;
+    align-self: flex-start;
+    background-color: gold;
+    padding: 5px;
+}
+footer .info li {
+    margin-bottom: 5px;
+}
+footer .info a {
+    color: black;
 }
